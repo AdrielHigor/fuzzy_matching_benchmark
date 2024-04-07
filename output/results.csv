@@ -1,6 +1,6 @@
-Algorithm,Total of addresses tested,Total of correct variations tested,Total of wrong variations tested,Total of matches found,True positives,False positives,Time taken ms,success rate %
-direct_matching,4,25,25,0,0,0,0.009000000000000001,0.0
-levenshtein_matching,4,25,25,17,15,2,0.705,88.23529411764706
-difflib_matching,4,25,25,27,25,2,1.5230000000000001,92.5925925925926
-fuzzywuzzy_matching,4,25,25,27,25,2,0.7010000000000001,92.5925925925926
-jaro_winkler_matching,4,25,25,27,25,2,0.62,92.5925925925926
+Algorithm,Total of addresses tested,Total of correct variations tested,Total of wrong variations tested,Total of matches found,True positives,False positives,Time taken ms,Precision,Recall
+direct_matching,4,25,25,0,0,0,0.009000000000000001,0.0,0.0
+levenshtein_matching,4,25,25,17,15,2,0.673,0.8823529411764706,0.6
+difflib_matching,4,25,25,27,25,2,1.462,0.9259259259259259,1.0
+fuzzywuzzy_matching,4,25,25,27,25,2,0.742,0.9259259259259259,1.0
+jaro_winkler_matching,4,25,25,27,25,2,0.618,0.9259259259259259,1.0

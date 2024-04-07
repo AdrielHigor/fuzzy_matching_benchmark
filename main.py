@@ -163,7 +163,8 @@ if __name__ == "__main__":
         false_positives = len([match for match in matches if match["correct"] == False])
         true_positives = len([match for match in matches if match["correct"] == True])
 
-        success_rate = true_positives / (true_positives + false_positives) * 100 if true_positives + false_positives > 0 else 0
+        precision = true_positives / (true_positives + false_positives) if true_positives + false_positives > 0 else 0
+        recall = true_positives / len(correct_address_matches)
 
         result = {
             "Algorithm": algorithm.__name__,
@@ -174,7 +175,8 @@ if __name__ == "__main__":
             "True positives": true_positives,
             "False positives": false_positives,
             "Time taken ms": time_taken_ms,
-            "success rate %": success_rate
+            "Precision": precision,
+            "Recall": recall
         }
 
         for key, value in result.items():
