@@ -130,9 +130,10 @@ def fuzzywuzzy_matching(addresses, addresses_to_match):
 
 
 if __name__ == "__main__":
+    # compares the performance of different fuzzy matching algorithms
+
     OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
     INPUT_DIR = os.path.join(os.path.dirname(__file__), "input")
-    # compare the performance of different fuzzy matching algorithms
 
     # load the data
     data = pd.read_csv(os.path.join(INPUT_DIR, "addresses.csv"))
@@ -144,8 +145,6 @@ if __name__ == "__main__":
     wrong_address_matches = pd.read_csv(os.path.join(INPUT_DIR, "address_wrong_variants.csv"))
     addresses_to_match += wrong_address_matches["address"].tolist()
 
-    # check csv file with total of addresses tested, total of variations tested, total of matches found, and time taken to run the algorithm
-    
     algorithms = [direct_matching, levenshtein_matching, difflib_matching, fuzzywuzzy_matching, jaro_winkler_matching]
     results_summary = []
     results_matches_per_algorithm = {}
@@ -177,7 +176,7 @@ if __name__ == "__main__":
             "Time taken ms": time_taken_ms,
             "success rate %": success_rate
         }
-        
+
         for key, value in result.items():
             print(key, ":", value)
 
