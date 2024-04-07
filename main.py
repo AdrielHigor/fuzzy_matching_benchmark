@@ -177,16 +177,10 @@ if __name__ == "__main__":
             "Time taken ms": time_taken_ms,
             "success rate %": success_rate
         }
+        
+        for key, value in result.items():
+            print(key, ":", value)
 
-        print("Algorithm:", algorithm.__name__)
-        print("Total of addresses tested:", len(addresses))
-        print("Total of correct variations tested:", len(correct_address_matches))
-        print("Total of wrong variations tested:", len(wrong_address_matches))
-        print("Total of matches found:", len(matches))
-        print("True positives:", true_positives)
-        print("False positives:", false_positives)
-        print("Time taken ms:", time_taken_ms)
-        print("success rate %:", success_rate)
         print("")
 
         results_matches_per_algorithm[algorithm.__name__] = matches
