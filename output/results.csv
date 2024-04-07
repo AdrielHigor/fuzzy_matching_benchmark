@@ -1,0 +1,6 @@
+Algorithm,Total of addresses tested,Total of correct variations tested,Total of wrong variations tested,Total of matches found,True positives,False positives,Time taken ms,success rate %
+direct_matching,4,25,25,0,0,0,0.04,0.0
+levenshtein_matching,4,25,25,17,15,2,0.6819999999999999,88.23529411764706
+difflib_matching,4,25,25,27,25,2,1.467,92.5925925925926
+fuzzywuzzy_matching,4,25,25,27,25,2,0.722,92.5925925925926
+jaro_winkler_matching,4,25,25,27,25,2,0.615,92.5925925925926

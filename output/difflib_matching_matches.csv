@@ -1,0 +1,28 @@
+address,address_to_match,similarity,correct
+123 candyland lane,123 Candyland Ln,0.8,True
+123 candyland lane,123 Candyland Ln.,0.7777777777777778,True
+123 candyland lane,123 Candy Land Lane,0.7894736842105263,True
+123 candyland lane,123 Candyland lane,0.918918918918919,True
+123 candyland lane,candyland lane 123,0.972972972972973,True
+123 candyland lane,candyland ln 123,0.9142857142857143,True
+123 candyland lane,candyland ln. 123,0.8888888888888888,True
+123 candyland lane,1234 Candyland Lane,0.8421052631578947,False
+321 lollipop street,321 Lollipop St,0.7428571428571429,True
+321 lollipop street,321 Lollipop Street,0.8717948717948718,True
+321 lollipop street,321 Lollipop St.,0.7222222222222222,True
+321 lollipop street,Lollipop St. 321,0.7222222222222222,True
+321 lollipop street,Lollipop St 321,0.7428571428571429,True
+321 lollipop street,Lollipop Street 321,0.8717948717948718,True
+456 gumdrop avenue,456 Gumdrop Ave,0.7647058823529411,True
+456 gumdrop avenue,456 Gumdrop Avenue,0.8648648648648649,True
+456 gumdrop avenue,456 Gumdrop Ave.,0.7428571428571429,True
+456 gumdrop avenue,Gumdrop Ave 456,0.7647058823529411,True
+456 gumdrop avenue,Gumdrop Ave. 456,0.7428571428571429,True
+456 gumdrop avenue,Gumdrop Avenue 456,0.8648648648648649,True
+456 gumdrop avenue,4567 Gumdrop Avenue,0.8421052631578947,False
+789 chocolate road,789 Chocolate Rd,0.8,True
+789 chocolate road,789 Chocolate Road,0.8648648648648649,True
+789 chocolate road,789 Chocolate Rd.,0.7777777777777778,True
+789 chocolate road,Chocolate Rd 789,0.8,True
+789 chocolate road,Chocolate Rd. 789,0.7777777777777778,True
+789 chocolate road,Chocolate Road 789,0.8648648648648649,True
